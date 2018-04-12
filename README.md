@@ -4,13 +4,13 @@
 
 
 ## Requirements
-* Robot Framework
-* Jenkins
+* Robot Framework ([install](https://wiki.contribs.org/Robotframework))
+* Jenkins ([install](https://www.vultr.com/docs/how-to-install-jenkins-on-centos-7))
 * Python 2.7.x
-* SIPp traffic generator
-* pcapsipdump(optional)
-* Wireshark(optional)
-* Apache HTTP Server (optional)
+* SIPp traffic generator ([install](http://sipp-wip.readthedocs.io/en/latest/installation.html))
+* pcapsipdump(*optional*) ([install](http://pcapsipdump.sourceforge.net/))
+* Wireshark(*optional*)
+* Apache HTTP Server(*optional*)
 
 
 
