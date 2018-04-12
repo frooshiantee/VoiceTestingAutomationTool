@@ -16,7 +16,9 @@
 
 
 ## Documents/Guide
-* [Guide to access Jenkins]()
+* **Guide to access Jenkins:** It is a step by step guide to access the Voice Testing Automation Tool
+* **How To Add New Origination Test Cases for Voice Automation Tool:** It is a step by step guide for adding new Orig Test Cases on the tool
+* **How To Add New Termination Test Cases for Voice Automation Tool:** It is a step by step guide for adding new Term Test Cases on the tool
 
 
 
