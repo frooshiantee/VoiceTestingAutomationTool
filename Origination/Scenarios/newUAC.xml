@@ -1,0 +1,70 @@
+ <send retrans="2000">
+    <![CDATA[
+
+      INVITE sip:7001000001@[remote_ip]:[remote_port] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: sipp <sip:sipp@[local_ip]:[local_port]>;tag=[call_number]
+      To: 7001000001 <sip:7001000001@[remote_ip]:[remote_port]>
+      Call-ID: [call_id]
+      CSeq: 1 INVITE
+      Contact: sip:sipp@[local_ip]:[local_port]
+      Max-Forwards: 70
+      Subject: Performance Test
+      Content-Type: application/sdp
+      Content-Length: 0
+
+      v=0
+      o=user1 53655765 2353687637 IN IP4 127.0.0.1
+      s=-
+      t=0 0
+      c=IN IP4 [media_ip]
+      m=audio [media_port] RTP/AVP 0
+      a=rtpmap:0 PCMU/8000
+
+    ]]>
+  </send>
+
+  <recv response="100"
+        optional="true">
+  </recv>
+
+  <recv response="180" optional="true">
+    <action>
+      <ereg regexp=".*" search_in="hdr" header="From:" check_it="true" 
+assign_to="1" />
+      <ereg regexp=".*" search_in="hdr" header="To:" check_it="true" 
+assign_to="2" />
+      <ereg regexp=".*" search_in="hdr" header="Via:" check_it="true" 
+assign_to="3" />
+      <ereg regexp=".*" search_in="hdr" header="Call-ID:" check_it="true" 
+assign_to="4" />
+      <log message="Received 180 response, the From header is: [$1]"/>
+      <log message="Received 180 response, the To header is: [$2]"/>
+      <log message="Received 180 response, the Via header is: [$3]"/>
+      <log message="Received 180 response, the CallID header is: [$4]"/>
+    </action>
+  </recv>
+
+  <send>
+    <![CDATA[
+
+      CANCEL sip:7001000001@[remote_ip]:[remote_port] SIP/2.0
+      From: [$1]
+      To: [$2]
+      Via: [$3]
+      Max-Forwards: 70
+      Call-ID: [$4]
+      CSeq: 1 CANCEL
+      Contact: sip:sipp@[local_ip]:[local_port]
+
+    ]]>
+  </send>
+
+  <!-- recv 487 response for the Invite being cancelled -->
+  <recv response="487" optional="true">
+  </recv>
+
+
+  <!-- recv 200 response for the Cancel request -->
+  <recv response="200" optional="true">
+  </recv>

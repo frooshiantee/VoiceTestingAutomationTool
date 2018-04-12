@@ -1,0 +1,1535 @@
+[2J[2J
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061       0.00 s            0  UDP
+
+  0 new calls during 0.000 s period      0 ms scheduler resolution
+  0 calls                                Peak was 0 calls, after 0 s
+  0 Running, 0 Paused, 0 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             0         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                0         0                            
+  <---------- 180                0         0                            
+  [    10.0s] Pause              0                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061       1.00 s            0  UDP
+
+  0 new calls during 1.001 s period      1 ms scheduler resolution
+  0 calls                                Peak was 0 calls, after 0 s
+  0 Running, 1 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             0         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                0         0                            
+  <---------- 180                0         0                            
+  [    10.0s] Pause              0                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061       2.00 s            0  UDP
+
+  0 new calls during 1.002 s period      1 ms scheduler resolution
+  0 calls                                Peak was 0 calls, after 0 s
+  0 Running, 1 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             0         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                0         0                            
+  <---------- 180                0         0                            
+  [    10.0s] Pause              0                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061       3.00 s            0  UDP
+
+  0 new calls during 1.002 s period      1 ms scheduler resolution
+  0 calls                                Peak was 0 calls, after 0 s
+  0 Running, 1 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             0         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                0         0                            
+  <---------- 180                0         0                            
+  [    10.0s] Pause              0                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061       4.00 s            0  UDP
+
+  0 new calls during 1.002 s period      1 ms scheduler resolution
+  0 calls                                Peak was 0 calls, after 0 s
+  0 Running, 1 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             0         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                0         0                            
+  <---------- 180                0         0                            
+  [    10.0s] Pause              0                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061       5.00 s            0  UDP
+
+  0 new calls during 1.002 s period      1 ms scheduler resolution
+  0 calls                                Peak was 0 calls, after 0 s
+  0 Running, 1 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             0         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                0         0                            
+  <---------- 180                0         0                            
+  [    10.0s] Pause              0                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061       6.01 s            0  UDP
+
+  0 new calls during 1.001 s period      1 ms scheduler resolution
+  0 calls                                Peak was 0 calls, after 0 s
+  0 Running, 1 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             0         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                0         0                            
+  <---------- 180                0         0                            
+  [    10.0s] Pause              0                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061       7.01 s            2  UDP
+
+  2 new calls during 1.007 s period      3 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061       8.02 s            2  UDP
+
+  0 new calls during 1.004 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061       9.02 s            2  UDP
+
+  0 new calls during 1.006 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      10.03 s            2  UDP
+
+  0 new calls during 1.003 s period      7 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      11.03 s            2  UDP
+
+  0 new calls during 1.004 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      12.03 s            2  UDP
+
+  0 new calls during 1.004 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      13.04 s            2  UDP
+
+  0 new calls during 1.003 s period      7 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      14.04 s            2  UDP
+
+  0 new calls during 1.007 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      15.05 s            2  UDP
+
+  0 new calls during 1.007 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      16.06 s            2  UDP
+
+  0 new calls during 1.010 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  0 Total RTP pckts sent                 0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                0         0         0                  
+  ----------> ACK         E-RTD1 0         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      17.07 s            2  UDP
+
+  0 new calls during 1.010 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 6 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  43 Total RTP pckts sent                7.326 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      18.08 s            2  UDP
+
+  0 new calls during 1.009 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  143 Total RTP pckts sent               17.047 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      19.09 s            2  UDP
+
+  0 new calls during 1.010 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  245 Total RTP pckts sent               17.374 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      20.09 s            2  UDP
+
+  0 new calls during 1.004 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  345 Total RTP pckts sent               17.132 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      21.10 s            2  UDP
+
+  0 new calls during 1.006 s period      7 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  445 Total RTP pckts sent               17.098 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      22.10 s            2  UDP
+
+  0 new calls during 1.002 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  546 Total RTP pckts sent               17.338 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      23.11 s            2  UDP
+
+  0 new calls during 1.006 s period      7 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  647 Total RTP pckts sent               17.270 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      24.11 s            2  UDP
+
+  0 new calls during 1.006 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  747 Total RTP pckts sent               17.098 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      25.12 s            2  UDP
+
+  0 new calls during 1.004 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  847 Total RTP pckts sent               17.132 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      26.13 s            2  UDP
+
+  0 new calls during 1.010 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  949 Total RTP pckts sent               17.374 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      27.14 s            2  UDP
+
+  0 new calls during 1.011 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  1049 Total RTP pckts sent              17.013 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      28.14 s            2  UDP
+
+  0 new calls during 1.005 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  1151 Total RTP pckts sent              17.459 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      29.15 s            2  UDP
+
+  0 new calls during 1.002 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  1250 Total RTP pckts sent              16.996 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      30.15 s            2  UDP
+
+  0 new calls during 1.006 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  1351 Total RTP pckts sent              17.270 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      31.16 s            2  UDP
+
+  0 new calls during 1.011 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  1452 Total RTP pckts sent              17.185 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      32.16 s            2  UDP
+
+  0 new calls during 1.001 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  1553 Total RTP pckts sent              17.355 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      33.17 s            2  UDP
+
+  0 new calls during 1.003 s period      7 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  1653 Total RTP pckts sent              17.149 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      34.17 s            2  UDP
+
+  0 new calls during 1.007 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  1753 Total RTP pckts sent              17.081 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      35.18 s            2  UDP
+
+  0 new calls during 1.003 s period      7 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  1853 Total RTP pckts sent              17.149 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      36.18 s            2  UDP
+
+  0 new calls during 1.008 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  1954 Total RTP pckts sent              17.236 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                0         0         0         0        
+  <---------- 200                0         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              0                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      37.19 s            2  UDP
+
+  0 new calls during 1.007 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  2055 Total RTP pckts sent              17.253 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                2         0         0         0        
+  <---------- 200                2         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              2                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      38.20 s            2  UDP
+
+  0 new calls during 1.007 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  2155 Total RTP pckts sent              17.081 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                2         0         0         0        
+  <---------- 200                2         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              2                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      39.20 s            2  UDP
+
+  0 new calls during 1.003 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 3 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  2256 Total RTP pckts sent              17.321 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                2         0         0         0        
+  <---------- 200                2         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              2                             0        
+------------------------------ Sipp Server Mode -------------------------------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5061      40.21 s            2  UDP
+
+  0 new calls during 1.004 s period      8 ms scheduler resolution
+  2 calls                                Peak was 2 calls, after 6 s
+  0 Running, 3 Paused, 4 Woken up
+  0 dead call msg (discarded)          
+  3 open sockets                        
+  2356 Total RTP pckts sent              17.132 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexp.    Lost
+  ----------> CANCEL             0         0         0         0        
+  ----------> ACK                0         0         0         0        
+  ----------> INVITE             2         0         0         0        
+
+              [ NOP ]              
+              [ NOP ]              
+  <---------- 100                2         0                            
+  <---------- 180                2         0                            
+  [    10.0s] Pause              2                             0        
+  <---------- 200                2         0         0                  
+  ----------> ACK         E-RTD1 2         0         0         0        
+
+              [ NOP ]              
+  ----------> INVITE             0         0         0         0        
+
+  ----------> BYE                2         0         0         0        
+  <---------- 200                2         0                            
+
+  <---------- 200                0         0                            
+  <---------- 487                0         0                            
+
+  [   4000ms] Pause              2                             0        
+------------------------------ Sipp Server Mode -------------------------------
+

@@ -1,0 +1,14 @@
+TShark 1.8.10 (SVN Rev Unknown from unknown)
+
+Copyright 1998-2013 Gerald Combs <gerald@wireshark.org> and contributors.
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Compiled (64-bit) with GLib 2.26.1, with libpcap, with libz 1.2.3, without POSIX
+capabilities, with SMI 0.4.8, without c-ares, without ADNS, without Lua, without
+Python, with GnuTLS 2.8.5, with Gcrypt 1.4.5, with MIT Kerberos, with GeoIP.
+
+Running on Linux 2.6.32-573.18.1.el6.x86_64, with locale en_US.UTF-8, with
+libpcap version 1.4.0, with libz 1.2.3.
+
+Built using gcc 4.4.7 20120313 (Red Hat 4.4.7-4).

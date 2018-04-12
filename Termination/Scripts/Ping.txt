@@ -1,0 +1,10 @@
+PING 216.82.232.100 (216.82.232.100) 56(84) bytes of data.
+64 bytes from 216.82.232.100: icmp_seq=1 ttl=63 time=0.424 ms
+64 bytes from 216.82.232.100: icmp_seq=2 ttl=63 time=0.434 ms
+64 bytes from 216.82.232.100: icmp_seq=3 ttl=63 time=0.440 ms
+64 bytes from 216.82.232.100: icmp_seq=4 ttl=63 time=0.423 ms
+64 bytes from 216.82.232.100: icmp_seq=5 ttl=63 time=0.358 ms
+
+--- 216.82.232.100 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.358/0.415/0.440/0.039 ms

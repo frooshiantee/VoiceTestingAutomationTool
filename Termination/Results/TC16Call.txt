@@ -1,0 +1,1080 @@
+[2J[2J
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062       0.00 s            0  216.82.232.100:5060(UDP)
+
+  0 new calls during 0.000 s period      0 ms scheduler resolution
+  0 calls (limit 720)                    Peak was 0 calls, after 0 s
+  0 Running, 0 Paused, 0 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         0         0         0                  
+         100 <----------         0         0         0         0        
+         180 <----------         0         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 0         0         0         0        
+         ACK ---------->         0         0                            
+       Pause [    20.0s]         0                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------ [+|-|*|/]: Adjust rate ---- [q]: Soft exit ---- [p]: Pause traffic -----
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062       1.00 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.003 s period  0 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  0 Total echo RTP pckts 1st stream      0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 0         0         0         0        
+         ACK ---------->         0         0                            
+       Pause [    20.0s]         0                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062       2.00 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.003 s period  3 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  0 Total echo RTP pckts 1st stream      0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 0         0         0         0        
+         ACK ---------->         0         0                            
+       Pause [    20.0s]         0                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062       3.01 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.003 s period  3 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  0 Total echo RTP pckts 1st stream      0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 0         0         0         0        
+         ACK ---------->         0         0                            
+       Pause [    20.0s]         0                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062       4.01 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.001 s period  3 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  0 Total echo RTP pckts 1st stream      0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 0         0         0         0        
+         ACK ---------->         0         0                            
+       Pause [    20.0s]         0                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062       5.01 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.002 s period  3 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  0 Total echo RTP pckts 1st stream      0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 0         0         0         0        
+         ACK ---------->         0         0                            
+       Pause [    20.0s]         0                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062       6.01 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.003 s period  3 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  0 Total echo RTP pckts 1st stream      0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 0         0         0         0        
+         ACK ---------->         0         0                            
+       Pause [    20.0s]         0                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062       7.02 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.003 s period  3 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  0 Total echo RTP pckts 1st stream      0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 0         0         0         0        
+         ACK ---------->         0         0                            
+       Pause [    20.0s]         0                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062       8.03 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.006 s period  3 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  0 Total echo RTP pckts 1st stream      0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 0         0         0         0        
+         ACK ---------->         0         0                            
+       Pause [    20.0s]         0                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062       9.03 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.003 s period  6 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  0 Total echo RTP pckts 1st stream      0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 0         0         0         0        
+         ACK ---------->         0         0                            
+       Pause [    20.0s]         0                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      10.03 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.003 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  0 Total echo RTP pckts 1st stream      0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 0         0         0         0        
+         ACK ---------->         0         0                            
+       Pause [    20.0s]         0                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      11.04 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.012 s period  7 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  42 Total echo RTP pckts 1st stream     7.140 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      12.05 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.004 s period  7 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  92 Total echo RTP pckts 1st stream     8.568 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      13.05 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.003 s period  7 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  143 Total echo RTP pckts 1st stream    8.748 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      14.05 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.001 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  193 Total echo RTP pckts 1st stream    8.592 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      15.07 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.011 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  243 Total echo RTP pckts 1st stream    8.512 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      16.07 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.004 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  293 Total echo RTP pckts 1st stream    8.568 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      17.07 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.004 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  344 Total echo RTP pckts 1st stream    8.740 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      18.08 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.007 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  394 Total echo RTP pckts 1st stream    8.544 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      19.08 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.003 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  444 Total echo RTP pckts 1st stream    8.576 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      20.09 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.008 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  495 Total echo RTP pckts 1st stream    8.708 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      21.10 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.010 s period  7 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  545 Total echo RTP pckts 1st stream    8.520 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      22.11 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.004 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  596 Total echo RTP pckts 1st stream    8.740 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      23.12 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.007 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  646 Total echo RTP pckts 1st stream    8.544 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      24.12 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.001 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  696 Total echo RTP pckts 1st stream    8.592 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      25.13 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.008 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  746 Total echo RTP pckts 1st stream    8.536 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      26.13 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.002 s period  7 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  797 Total echo RTP pckts 1st stream    8.756 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      27.14 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.012 s period  7 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 1 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  847 Total echo RTP pckts 1st stream    8.504 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      28.15 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.006 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  897 Total echo RTP pckts 1st stream    8.552 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      29.15 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.007 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 1 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  948 Total echo RTP pckts 1st stream    8.716 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      30.16 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.003 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  998 Total echo RTP pckts 1st stream    8.576 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         0         0         0                  
+         200 <----------         0         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         0                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      31.16 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.006 s period  7 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  1001 Total echo RTP pckts 1st stream   0.516 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         1         0         0                  
+         200 <----------         1         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         1                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      32.17 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.001 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  1001 Total echo RTP pckts 1st stream   0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         1         0         0                  
+         200 <----------         1         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         1                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      33.17 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.004 s period  7 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 3 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  1001 Total echo RTP pckts 1st stream   0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         1         0         0                  
+         200 <----------         1         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         1                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+[2J------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      34.17 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 1.003 s period  8 ms scheduler resolution
+  1 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 4 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  3 open sockets                        
+  1001 Total echo RTP pckts 1st stream   0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         1         0         0                  
+         200 <----------         1         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         1                             0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      34.24 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 0.065 s period  10 ms scheduler resolution
+  0 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 1 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  1 open sockets                        
+  1001 Total echo RTP pckts 1st stream   0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         1         0         0                  
+         200 <----------         1         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         1                             0        
+------------------------------ Test Terminated --------------------------------
+
+(B)0[1;24r[m[?7h[24;1H[?1l>
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5062      34.24 s            1  216.82.232.100:5060(UDP)
+
+  Call limit reached (-m 1), 0.000 s period  0 ms scheduler resolution
+  0 calls (limit 720)                    Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 0 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  1 open sockets                        
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1         0         0                  
+         100 <----------         1         0         0         0        
+         180 <----------         1         0         0         0        
+         183 <----------         0         0         0         0        
+         200 <----------  E-RTD1 1         0         0         0        
+         ACK ---------->         1         0                            
+       Pause [    20.0s]         1                             0        
+         BYE ---------->         1         0         0                  
+         200 <----------         1         0         0         0        
+
+         ACK ---------->         0         0                            
+       Pause [   4000ms]         1                             0        
+------------------------------ Test Terminated --------------------------------
+
+
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2018-03-14	20:08:36:027	1521058116.027369            
+  Last Reset Time        | 2018-03-14	20:09:10:279	1521058150.279368            
+  Current Time           | 2018-03-14	20:09:10:280	1521058150.280088            
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:000              | 00:00:34:252             
+  Call Rate              |    0.000 cps              |    0.029 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming call created  |        0                  |        0                 
+  OutGoing call created  |        0                  |        1                 
+  Total Call created     |                           |        1                 
+  Current Call           |        0                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |        1                 
+  Failed call            |        0                  |        0                 
+-------------------------+---------------------------+--------------------------
+  Response Time 1        | 00:00:00:000              | 00:00:10:107             
+  Call Length            | 00:00:00:000              | 00:00:34:133             
+------------------------------ Test Terminated --------------------------------
+
+

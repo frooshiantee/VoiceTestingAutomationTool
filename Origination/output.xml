@@ -1,0 +1,2848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180322 17:14:28.767" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<suite source="/home/Origination/Origination.robot" id="s1" name="Origination">
+<test id="s1-t1" name="Test1: Origination call to through CASBC to SBC proxy then CUSBC to 10 digit number">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:14:29.197" starttime="20180322 17:14:29.197"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:14:29.198" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:14:30.940" level="INFO">Read output: Last login: Fri Mar 16 13:35:30 2018 from 172.17.0.2
+[calltesting@clecvoip-02.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:14:30.940" starttime="20180322 17:14:29.198"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:14:31.000" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:14:31.001" starttime="20180322 17:14:30.941"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:14:31.382" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:14:31.382" level="INFO">${outputS} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:14:31.382" starttime="20180322 17:14:31.001"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:14:31.384" starttime="20180322 17:14:31.382"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:14:31.477" starttime="20180322 17:14:31.385"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:14:36.478" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:14:36.478" starttime="20180322 17:14:31.477"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_S}OC3_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:14:36.502" level="INFO">[root@clecvoip-02 calltesting]# /home/Origination/Scripts/OC3_uas.py 192.168.100 .110 5061</msg>
+<status status="PASS" endtime="20180322 17:14:36.502" starttime="20180322 17:14:36.479"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:14:36.502" starttime="20180322 17:14:36.502"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:14:36.503" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:14:37.688" level="INFO">Read output: Last login: Fri Mar 16 13:35:18 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:14:37.688" starttime="20180322 17:14:36.503"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:14:37.706" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:14:37.706" starttime="20180322 17:14:37.688"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:14:37.718" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:14:37.718" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:14:37.718" starttime="20180322 17:14:37.706"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:14:37.718" starttime="20180322 17:14:37.718"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:14:37.734" starttime="20180322 17:14:37.718"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:14:42.735" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:14:42.736" starttime="20180322 17:14:37.734"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_C}OC3_uac.py ${SIG_IP} ${UAC_IP} ${COUNT}</arg>
+</arguments>
+<msg timestamp="20180322 17:14:42.760" level="INFO">[root@clecvoip-01 calltesting]# /etc/sipp/proxytesting/OC3_uac.py 192.168.126.71  192.168.100.107 1</msg>
+<status status="PASS" endtime="20180322 17:14:42.760" starttime="20180322 17:14:42.736"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>prompt=#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:14:42.761" starttime="20180322 17:14:42.761"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=10000</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:14:42.761" starttime="20180322 17:14:42.761"></status>
+</kw>
+<kw name="Read Until Prompt" library="SSHLibrary">
+<doc>Consumes and returns the server output until the prompt is found.</doc>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:14:56.998" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<msg timestamp="20180322 17:14:56.999" level="INFO">${output1} = Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:14:56.999" starttime="20180322 17:14:42.761"></status>
+</kw>
+<kw name="Should End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>]#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:14:57.001" starttime="20180322 17:14:56.999"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:14:57.001" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:14:57.001" starttime="20180322 17:14:57.001"></status>
+</kw>
+<kw name="Should Not Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` contains one or more of the ``*items``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>Fail</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:14:57.002" starttime="20180322 17:14:57.001"></status>
+</kw>
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180322 17:14:57.107" starttime="20180322 17:14:57.002"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${COUNT}+ ${COUNT}</arg>
+</arguments>
+<assign>
+<var>${SLEEPTIMER}</var>
+</assign>
+<msg timestamp="20180322 17:14:57.108" level="INFO">${SLEEPTIMER} = 2</msg>
+<status status="PASS" endtime="20180322 17:14:57.108" starttime="20180322 17:14:57.107"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SLEEPTIMER}</arg>
+</arguments>
+<msg timestamp="20180322 17:14:59.109" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180322 17:14:59.109" starttime="20180322 17:14:57.108"></status>
+</kw>
+<tags>
+<tag>Origination/Inbound</tag>
+</tags>
+<status status="PASS" endtime="20180322 17:14:59.109" critical="yes" starttime="20180322 17:14:29.196"></status>
+</test>
+<test id="s1-t2" name="Test2: Origination call to through CASBC to SBC proxy then CUSBC to Toll Free number(+1855XXXXXXX)">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:14:59.119" starttime="20180322 17:14:59.118"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:14:59.119" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:15:00.169" level="INFO">Read output: Last login: Thu Mar 22 17:14:57 2018 from 172.17.0.2</msg>
+<status status="PASS" endtime="20180322 17:15:00.170" starttime="20180322 17:14:59.119"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:15:00.191" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:15:00.191" starttime="20180322 17:15:00.170"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:15:00.422" level="INFO">[calltesting@clecvoip-02.lab1 ~]$ sudo su
+[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:15:00.423" level="INFO">${outputS} = [calltesting@clecvoip-02.lab1 ~]$ sudo su
+[sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:15:00.423" starttime="20180322 17:15:00.191"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:00.424" starttime="20180322 17:15:00.424"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:00.467" starttime="20180322 17:15:00.424"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:15:05.468" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:15:05.469" starttime="20180322 17:15:00.468"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_S}OC4_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:15:05.490" level="INFO">[root@clecvoip-02 calltesting]# /home/Origination/Scripts/OC4_uas.py 192.168.100 .110 5061</msg>
+<status status="PASS" endtime="20180322 17:15:05.490" starttime="20180322 17:15:05.469"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:05.491" starttime="20180322 17:15:05.491"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:15:05.492" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:15:06.693" level="INFO">Read output: Last login: Thu Mar 22 17:15:04 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:15:06.694" starttime="20180322 17:15:05.491"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:15:06.723" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:15:06.723" starttime="20180322 17:15:06.694"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:15:06.723" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:15:06.724" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:15:06.724" starttime="20180322 17:15:06.723"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:06.724" starttime="20180322 17:15:06.724"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:06.744" starttime="20180322 17:15:06.724"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:15:11.744" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:15:11.745" starttime="20180322 17:15:06.744"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_C}OC4_uac.py ${SIG_IP} ${UAC_IP} ${COUNT}</arg>
+</arguments>
+<msg timestamp="20180322 17:15:11.754" level="INFO">[root@clecvoip-01 calltesting]# /etc/sipp/proxytesting/OC4_uac.py 192.168.126.71  192.168.100.107 1</msg>
+<status status="PASS" endtime="20180322 17:15:11.754" starttime="20180322 17:15:11.745"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>prompt=#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:11.755" starttime="20180322 17:15:11.754"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=10000</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:11.755" starttime="20180322 17:15:11.755"></status>
+</kw>
+<kw name="Read Until Prompt" library="SSHLibrary">
+<doc>Consumes and returns the server output until the prompt is found.</doc>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:15:48.070" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<msg timestamp="20180322 17:15:48.071" level="INFO">${output1} = Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:15:48.071" starttime="20180322 17:15:11.755"></status>
+</kw>
+<kw name="Should End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>]#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:48.073" starttime="20180322 17:15:48.072"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:15:48.074" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:15:48.074" starttime="20180322 17:15:48.074"></status>
+</kw>
+<kw name="Should Not Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` contains one or more of the ``*items``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>Fail</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:48.074" starttime="20180322 17:15:48.074"></status>
+</kw>
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180322 17:15:48.311" starttime="20180322 17:15:48.075"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${COUNT}+ ${COUNT}</arg>
+</arguments>
+<assign>
+<var>${SLEEPTIMER}</var>
+</assign>
+<msg timestamp="20180322 17:15:48.312" level="INFO">${SLEEPTIMER} = 2</msg>
+<status status="PASS" endtime="20180322 17:15:48.312" starttime="20180322 17:15:48.311"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SLEEPTIMER}</arg>
+</arguments>
+<msg timestamp="20180322 17:15:50.316" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180322 17:15:50.316" starttime="20180322 17:15:48.312"></status>
+</kw>
+<tags>
+<tag>Origination/Inbound</tag>
+</tags>
+<status status="PASS" endtime="20180322 17:15:50.317" critical="yes" starttime="20180322 17:14:59.117"></status>
+</test>
+<test id="s1-t3" name="Test3: Origination call test DTMF functionality">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:50.320" starttime="20180322 17:15:50.319"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:15:50.320" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:15:51.661" level="INFO">Read output: Last login: Thu Mar 22 17:15:50 2018 from 172.17.0.2
+[calltesting@clecvoip-02.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:15:51.662" starttime="20180322 17:15:50.320"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:15:51.673" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:15:51.673" starttime="20180322 17:15:51.662"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:15:51.759" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:15:51.759" level="INFO">${outputS} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:15:51.759" starttime="20180322 17:15:51.673"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:51.760" starttime="20180322 17:15:51.759"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:51.781" starttime="20180322 17:15:51.760"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:15:56.781" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:15:56.781" starttime="20180322 17:15:51.781"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_S}OC5_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:15:56.792" level="INFO">[root@clecvoip-02 calltesting]# /home/Origination/Scripts/OC5_uas.py 192.168.100 .110 5061</msg>
+<status status="PASS" endtime="20180322 17:15:56.792" starttime="20180322 17:15:56.782"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:56.793" starttime="20180322 17:15:56.792"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:15:56.793" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:15:58.006" level="INFO">Read output: Last login: Thu Mar 22 17:15:55 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:15:58.007" starttime="20180322 17:15:56.793"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:15:58.026" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:15:58.026" starttime="20180322 17:15:58.007"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:15:58.026" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:15:58.027" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:15:58.027" starttime="20180322 17:15:58.026"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:58.027" starttime="20180322 17:15:58.027"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:15:58.060" starttime="20180322 17:15:58.027"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:16:03.060" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:16:03.060" starttime="20180322 17:15:58.060"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_C}OC5_uac.py ${SIG_IP} ${UAC_IP} ${COUNT}</arg>
+</arguments>
+<msg timestamp="20180322 17:16:03.069" level="INFO">[root@clecvoip-01 calltesting]# /etc/sipp/proxytesting/OC5_uac.py 192.168.126.71  192.168.100.107 1</msg>
+<status status="PASS" endtime="20180322 17:16:03.069" starttime="20180322 17:16:03.061"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>prompt=#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:03.069" starttime="20180322 17:16:03.069"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=10000</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:03.070" starttime="20180322 17:16:03.070"></status>
+</kw>
+<kw name="Read Until Prompt" library="SSHLibrary">
+<doc>Consumes and returns the server output until the prompt is found.</doc>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:16:33.444" level="INFO">In pcap /etc/sipp/pcap/dtmf_2833_7.pcap, npkts 10
+max pkt length 24
+base port 10000
+In pcap /etc/sipp/pcap/dtmf_2833_star.pcap, npkts 10
+max pkt length 24
+base port 10000
+Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<msg timestamp="20180322 17:16:33.445" level="INFO">${output1} = In pcap /etc/sipp/pcap/dtmf_2833_7.pcap, npkts 10
+max pkt length 24
+base port 10000
+In pcap /etc/sipp/pcap/dtmf_2833_star.pcap, npkts 10
+max pkt length 24
+base port 10000
+Resolving remote host '...</msg>
+<status status="PASS" endtime="20180322 17:16:33.445" starttime="20180322 17:16:03.070"></status>
+</kw>
+<kw name="Should End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>]#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:33.447" starttime="20180322 17:16:33.446"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:16:33.447" level="INFO">In pcap /etc/sipp/pcap/dtmf_2833_7.pcap, npkts 10
+max pkt length 24
+base port 10000
+In pcap /etc/sipp/pcap/dtmf_2833_star.pcap, npkts 10
+max pkt length 24
+base port 10000
+Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:16:33.447" starttime="20180322 17:16:33.447"></status>
+</kw>
+<kw name="Should Not Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` contains one or more of the ``*items``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>Fail</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:33.448" starttime="20180322 17:16:33.447"></status>
+</kw>
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180322 17:16:33.545" starttime="20180322 17:16:33.448"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${COUNT}+ ${COUNT}</arg>
+</arguments>
+<assign>
+<var>${SLEEPTIMER}</var>
+</assign>
+<msg timestamp="20180322 17:16:33.546" level="INFO">${SLEEPTIMER} = 2</msg>
+<status status="PASS" endtime="20180322 17:16:33.546" starttime="20180322 17:16:33.545"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SLEEPTIMER}</arg>
+</arguments>
+<msg timestamp="20180322 17:16:35.547" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180322 17:16:35.547" starttime="20180322 17:16:33.546"></status>
+</kw>
+<tags>
+<tag>Origination/Inbound</tag>
+</tags>
+<status status="PASS" endtime="20180322 17:16:35.547" critical="yes" starttime="20180322 17:15:50.318"></status>
+</test>
+<test id="s1-t4" name="Test4: Origination call, test 711u">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:35.550" starttime="20180322 17:16:35.550"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:16:35.551" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:16:36.883" level="INFO">Read output: Last login: Thu Mar 22 17:16:27 2018 from 172.17.0.2
+[calltesting@clecvoip-02.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:16:36.883" starttime="20180322 17:16:35.550"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:16:36.926" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:16:36.926" starttime="20180322 17:16:36.884"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:16:36.998" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:16:36.998" level="INFO">${outputS} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:16:36.998" starttime="20180322 17:16:36.926"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:36.999" starttime="20180322 17:16:36.998"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:37.023" starttime="20180322 17:16:36.999"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:16:42.024" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:16:42.024" starttime="20180322 17:16:37.023"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_S}OC6_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:16:42.069" level="INFO">[root@clecvoip-02 calltesting]# /home/Origination/Scripts/OC6_uas.py 192.168.100 .110 5061</msg>
+<status status="PASS" endtime="20180322 17:16:42.069" starttime="20180322 17:16:42.024"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:42.070" starttime="20180322 17:16:42.069"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:16:42.070" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:16:43.288" level="INFO">Read output: Last login: Thu Mar 22 17:16:32 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:16:43.288" starttime="20180322 17:16:42.070"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:16:43.318" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:16:43.319" starttime="20180322 17:16:43.288"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:16:43.319" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:16:43.320" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:16:43.320" starttime="20180322 17:16:43.319"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:43.320" starttime="20180322 17:16:43.320"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:43.338" starttime="20180322 17:16:43.320"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:16:48.338" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:16:48.339" starttime="20180322 17:16:43.338"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_C}OC6_uac.py ${SIG_IP} ${UAC_IP} ${COUNT}</arg>
+</arguments>
+<msg timestamp="20180322 17:16:48.376" level="INFO">[root@clecvoip-01 calltesting]# /etc/sipp/proxytesting/OC6_uac.py 192.168.126.71  192.168.100.107 1</msg>
+<status status="PASS" endtime="20180322 17:16:48.376" starttime="20180322 17:16:48.339"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>prompt=#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:48.377" starttime="20180322 17:16:48.376"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=10000</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:16:48.377" starttime="20180322 17:16:48.377"></status>
+</kw>
+<kw name="Read Until Prompt" library="SSHLibrary">
+<doc>Consumes and returns the server output until the prompt is found.</doc>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:17:22.698" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<msg timestamp="20180322 17:17:22.700" level="INFO">${output1} = Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:17:22.700" starttime="20180322 17:16:48.377"></status>
+</kw>
+<kw name="Should End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>]#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:17:22.702" starttime="20180322 17:17:22.701"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:17:22.702" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:17:22.702" starttime="20180322 17:17:22.702"></status>
+</kw>
+<kw name="Should Not Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` contains one or more of the ``*items``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>Fail</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:17:22.703" starttime="20180322 17:17:22.702"></status>
+</kw>
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180322 17:17:22.816" starttime="20180322 17:17:22.703"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${COUNT}+ ${COUNT}</arg>
+</arguments>
+<assign>
+<var>${SLEEPTIMER}</var>
+</assign>
+<msg timestamp="20180322 17:17:22.817" level="INFO">${SLEEPTIMER} = 2</msg>
+<status status="PASS" endtime="20180322 17:17:22.817" starttime="20180322 17:17:22.816"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SLEEPTIMER}</arg>
+</arguments>
+<msg timestamp="20180322 17:17:24.817" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180322 17:17:24.818" starttime="20180322 17:17:22.817"></status>
+</kw>
+<tags>
+<tag>Origination/Inbound</tag>
+</tags>
+<status status="PASS" endtime="20180322 17:17:24.818" critical="yes" starttime="20180322 17:16:35.549"></status>
+</test>
+<test id="s1-t5" name="Test5: Origination call, test 729a">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:17:24.821" starttime="20180322 17:17:24.820"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:17:24.821" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:17:26.163" level="INFO">Read output: Last login: Thu Mar 22 17:17:01 2018 from 172.17.0.2
+[calltesting@clecvoip-02.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:17:26.164" starttime="20180322 17:17:24.821"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:17:26.174" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:17:26.174" starttime="20180322 17:17:26.164"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:17:26.261" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:17:26.261" level="INFO">${outputS} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:17:26.261" starttime="20180322 17:17:26.174"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:17:26.262" starttime="20180322 17:17:26.261"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:17:26.286" starttime="20180322 17:17:26.262"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:17:31.286" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:17:31.287" starttime="20180322 17:17:26.286"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_S}OC7_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:17:31.331" level="INFO">[root@clecvoip-02 calltesting]# /home/Origination/Scripts/OC7_uas.py 192.168.100 .110 5061</msg>
+<status status="PASS" endtime="20180322 17:17:31.331" starttime="20180322 17:17:31.287"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:17:31.332" starttime="20180322 17:17:31.331"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:17:31.332" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:17:32.541" level="INFO">Read output: Last login: Thu Mar 22 17:17:06 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:17:32.541" starttime="20180322 17:17:31.332"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:17:32.552" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:17:32.552" starttime="20180322 17:17:32.541"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:17:32.580" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:17:32.580" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:17:32.580" starttime="20180322 17:17:32.552"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:17:32.580" starttime="20180322 17:17:32.580"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:17:32.606" starttime="20180322 17:17:32.580"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:17:37.607" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:17:37.607" starttime="20180322 17:17:32.607"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_C}OC7_uac.py ${SIG_IP} ${UAC_IP} ${COUNT}</arg>
+</arguments>
+<msg timestamp="20180322 17:17:37.615" level="INFO">[root@clecvoip-01 calltesting]# /etc/sipp/proxytesting/OC7_uac.py 192.168.126.71  192.168.100.107 1</msg>
+<status status="PASS" endtime="20180322 17:17:37.615" starttime="20180322 17:17:37.608"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>prompt=#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:17:37.615" starttime="20180322 17:17:37.615"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=10000</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:17:37.616" starttime="20180322 17:17:37.616"></status>
+</kw>
+<kw name="Read Until Prompt" library="SSHLibrary">
+<doc>Consumes and returns the server output until the prompt is found.</doc>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:18:11.960" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<msg timestamp="20180322 17:18:11.962" level="INFO">${output1} = Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:18:11.962" starttime="20180322 17:17:37.616"></status>
+</kw>
+<kw name="Should End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>]#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:11.964" starttime="20180322 17:18:11.963"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:11.964" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:18:11.964" starttime="20180322 17:18:11.964"></status>
+</kw>
+<kw name="Should Not Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` contains one or more of the ``*items``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>Fail</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:11.965" starttime="20180322 17:18:11.965"></status>
+</kw>
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180322 17:18:12.073" starttime="20180322 17:18:11.965"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${COUNT}+ ${COUNT}</arg>
+</arguments>
+<assign>
+<var>${SLEEPTIMER}</var>
+</assign>
+<msg timestamp="20180322 17:18:12.074" level="INFO">${SLEEPTIMER} = 2</msg>
+<status status="PASS" endtime="20180322 17:18:12.075" starttime="20180322 17:18:12.074"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SLEEPTIMER}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:14.075" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180322 17:18:14.076" starttime="20180322 17:18:12.075"></status>
+</kw>
+<tags>
+<tag>Origination/Inbound</tag>
+</tags>
+<status status="PASS" endtime="20180322 17:18:14.076" critical="yes" starttime="20180322 17:17:24.819"></status>
+</test>
+<test id="s1-t6" name="Test6: Origination call, CNAM">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:14.079" starttime="20180322 17:18:14.078"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:14.080" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:18:15.393" level="INFO">Read output: Last login: Thu Mar 22 17:18:11 2018 from 172.17.0.2
+[calltesting@clecvoip-02.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:18:15.394" starttime="20180322 17:18:14.079"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:18:15.461" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:18:15.462" starttime="20180322 17:18:15.394"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:18:15.492" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:18:15.492" level="INFO">${outputS} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:18:15.492" starttime="20180322 17:18:15.462"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:15.493" starttime="20180322 17:18:15.492"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:15.522" starttime="20180322 17:18:15.493"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:18:20.523" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:18:20.523" starttime="20180322 17:18:15.522"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>cd ${PATH_S}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:20.540" level="INFO">[root@clecvoip-02 calltesting]# cd /home/Origination/Scripts/</msg>
+<status status="PASS" endtime="20180322 17:18:20.540" starttime="20180322 17:18:20.524"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>./OC10_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:20.549" level="INFO">[root@clecvoip-02 Scripts]# ./OC10_uas.py 192.168.100.110 5061</msg>
+<status status="PASS" endtime="20180322 17:18:20.549" starttime="20180322 17:18:20.540"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:20.550" starttime="20180322 17:18:20.549"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:20.550" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:18:21.774" level="INFO">Read output: Last login: Thu Mar 22 17:18:15 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:18:21.775" starttime="20180322 17:18:20.550"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:18:21.783" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:18:21.783" starttime="20180322 17:18:21.775"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:18:21.832" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:18:21.832" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:18:21.832" starttime="20180322 17:18:21.783"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:21.832" starttime="20180322 17:18:21.832"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:21.847" starttime="20180322 17:18:21.832"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:18:26.847" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:18:26.848" starttime="20180322 17:18:21.847"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>cd ${Path_C}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:26.893" level="INFO">[root@clecvoip-01 calltesting]# cd /etc/sipp/proxytesting/</msg>
+<status status="PASS" endtime="20180322 17:18:26.893" starttime="20180322 17:18:26.848"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>./OC10_uac.py ${SIG_IP} ${UAC_IP} ${COUNT}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:26.928" level="INFO">[root@clecvoip-01 proxytesting]# ./OC10_uac.py 192.168.126.71 192.168.100.107 1</msg>
+<status status="PASS" endtime="20180322 17:18:26.928" starttime="20180322 17:18:26.893"></status>
+</kw>
+<kw name="Switch Connection" library="SSHLibrary">
+<doc>Switches the active connection by index or alias.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:26.928" starttime="20180322 17:18:26.928"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=30</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:26.929" starttime="20180322 17:18:26.929"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>'.</arg>
+</arguments>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:18:27.324" level="INFO">2018-03-22	17:18:27:288	1521739107.288819: Aborting call on unexpected message for Call-Id '100930686_28807420@216.82.232.100': while expecting 'CANCEL' (index 0), received 'INVITE sip:+14027658834@192.168.100.110:5060 SIP/2.0
+Via: SIP/2.0/UDP 216.82.232.100:5060;branch=z9hG4bK04B3d7901732f9a9e74
+From: "VoiceAutoTool" &lt;sip:+19193377202@216.82.232.100;isup-oli=62&gt;;tag=gK042910b5
+To: &lt;sip:4027658834@192.168.100.110&gt;
+Call-ID: 100930686_28807420@216.82.232.100
+CSeq: 870960 INVITE
+Max-Forwards: 70
+Allow: INVITE,ACK,CANCEL,BYE,INFO,SUBSCRIBE,NOTIFY,OPTIONS
+Accept: application/sdp
+Contact: "VoiceAutoTool" &lt;sip:+19193377202@216.82.232.100:5060&gt;
+Route: &lt;sip:192.168.100.110:5061;lr;dtg=CALVIN_IN_TG&gt;
+Supported: timer,replaces
+Session-Expires: 90
+Min-SE: 90
+Content-Length:   332
+Content-Disposition: session; handling=required
+Content-Type: application/sdp
+
+v=0
+o=Sonus_UAC 448828 642552 IN IP4 216.82.232.100
+s=SIP Media Capabilities
+c=IN IP4 192.168.100.108
+t=0 0
+m=audio 39042 RTP/AVP 0 18 96 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:96 iLBC/8000
+a=fmtp:96 mode=30
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:30
+'.</msg>
+<msg timestamp="20180322 17:18:27.324" level="INFO">${output1} = 2018-03-22	17:18:27:288	1521739107.288819: Aborting call on unexpected message for Call-Id '100930686_28807420@216.82.232.100': while expecting 'CANCEL' (index 0), received 'INVITE sip:+14027658834@19...</msg>
+<status status="PASS" endtime="20180322 17:18:27.324" starttime="20180322 17:18:26.929"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:27.325" level="INFO">2018-03-22	17:18:27:288	1521739107.288819: Aborting call on unexpected message for Call-Id '100930686_28807420@216.82.232.100': while expecting 'CANCEL' (index 0), received 'INVITE sip:+14027658834@192.168.100.110:5060 SIP/2.0
+Via: SIP/2.0/UDP 216.82.232.100:5060;branch=z9hG4bK04B3d7901732f9a9e74
+From: "VoiceAutoTool" &lt;sip:+19193377202@216.82.232.100;isup-oli=62&gt;;tag=gK042910b5
+To: &lt;sip:4027658834@192.168.100.110&gt;
+Call-ID: 100930686_28807420@216.82.232.100
+CSeq: 870960 INVITE
+Max-Forwards: 70
+Allow: INVITE,ACK,CANCEL,BYE,INFO,SUBSCRIBE,NOTIFY,OPTIONS
+Accept: application/sdp
+Contact: "VoiceAutoTool" &lt;sip:+19193377202@216.82.232.100:5060&gt;
+Route: &lt;sip:192.168.100.110:5061;lr;dtg=CALVIN_IN_TG&gt;
+Supported: timer,replaces
+Session-Expires: 90
+Min-SE: 90
+Content-Length:   332
+Content-Disposition: session; handling=required
+Content-Type: application/sdp
+
+v=0
+o=Sonus_UAC 448828 642552 IN IP4 216.82.232.100
+s=SIP Media Capabilities
+c=IN IP4 192.168.100.108
+t=0 0
+m=audio 39042 RTP/AVP 0 18 96 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:96 iLBC/8000
+a=fmtp:96 mode=30
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:30
+'.</msg>
+<status status="PASS" endtime="20180322 17:18:27.325" starttime="20180322 17:18:27.324"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>received 'INVITE</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:27.325" starttime="20180322 17:18:27.325"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>From: "VoiceAutoTool"</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:27.326" starttime="20180322 17:18:27.325"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>P-Asserted-Identity: "VoiceAutoTool"</arg>
+</arguments>
+<msg timestamp="20180322 17:18:27.326" level="FAIL">'2018-03-22	17:18:27:288	1521739107.288819: Aborting call on unexpected message for Call-Id '100930686_28807420@216.82.232.100': while expecting 'CANCEL' (index 0), received 'INVITE sip:+14027658834@192.168.100.110:5060 SIP/2.0
+Via: SIP/2.0/UDP 216.82.232.100:5060;branch=z9hG4bK04B3d7901732f9a9e74
+From: "VoiceAutoTool" &lt;sip:+19193377202@216.82.232.100;isup-oli=62&gt;;tag=gK042910b5
+To: &lt;sip:4027658834@192.168.100.110&gt;
+Call-ID: 100930686_28807420@216.82.232.100
+CSeq: 870960 INVITE
+Max-Forwards: 70
+Allow: INVITE,ACK,CANCEL,BYE,INFO,SUBSCRIBE,NOTIFY,OPTIONS
+Accept: application/sdp
+Contact: "VoiceAutoTool" &lt;sip:+19193377202@216.82.232.100:5060&gt;
+Route: &lt;sip:192.168.100.110:5061;lr;dtg=CALVIN_IN_TG&gt;
+Supported: timer,replaces
+Session-Expires: 90
+Min-SE: 90
+Content-Length:   332
+Content-Disposition: session; handling=required
+Content-Type: application/sdp
+
+v=0
+o=Sonus_UAC 448828 642552 IN IP4 216.82.232.100
+s=SIP Media Capabilities
+c=IN IP4 192.168.100.108
+t=0 0
+m=audio 39042 RTP/AVP 0 18 96 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:96 iLBC/8000
+a=fmtp:96 mode=30
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:30
+'.' does not contain 'P-Asserted-Identity: "VoiceAutoTool"'</msg>
+<status status="FAIL" endtime="20180322 17:18:27.326" starttime="20180322 17:18:27.326"></status>
+</kw>
+<tags>
+<tag>Origination/Inbound</tag>
+</tags>
+<status status="FAIL" endtime="20180322 17:18:27.327" critical="yes" starttime="20180322 17:18:14.077">'2018-03-22	17:18:27:288	1521739107.288819: Aborting call on unexpected message for Call-Id '100930686_28807420@216.82.232.100': while expecting 'CANCEL' (index 0), received 'INVITE sip:+14027658834@192.168.100.110:5060 SIP/2.0
+Via: SIP/2.0/UDP 216.82.232.100:5060;branch=z9hG4bK04B3d7901732f9a9e74
+From: "VoiceAutoTool" &lt;sip:+19193377202@216.82.232.100;isup-oli=62&gt;;tag=gK042910b5
+To: &lt;sip:4027658834@192.168.100.110&gt;
+Call-ID: 100930686_28807420@216.82.232.100
+CSeq: 870960 INVITE
+Max-Forwards: 70
+Allow: INVITE,ACK,CANCEL,BYE,INFO,SUBSCRIBE,NOTIFY,OPTIONS
+Accept: application/sdp
+Contact: "VoiceAutoTool" &lt;sip:+19193377202@216.82.232.100:5060&gt;
+Route: &lt;sip:192.168.100.110:5061;lr;dtg=CALVIN_IN_TG&gt;
+Supported: timer,replaces
+Session-Expires: 90
+Min-SE: 90
+Content-Length:   332
+Content-Disposition: session; handling=required
+Content-Type: application/sdp
+
+v=0
+o=Sonus_UAC 448828 642552 IN IP4 216.82.232.100
+s=SIP Media Capabilities
+c=IN IP4 192.168.100.108
+t=0 0
+m=audio 39042 RTP/AVP 0 18 96 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:96 iLBC/8000
+a=fmtp:96 mode=30
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv
+a=ptime:30
+'.' does not contain 'P-Asserted-Identity: "VoiceAutoTool"'</status>
+</test>
+<test id="s1-t7" name="Test7: Origination call, transcoding 711/729">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:18:32.329" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:18:32.329" starttime="20180322 17:18:27.328"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:32.330" starttime="20180322 17:18:32.329"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:32.330" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:18:33.672" level="INFO">Read output: Last login: Thu Mar 22 17:18:14 2018 from 172.17.0.2
+[calltesting@clecvoip-02.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:18:33.672" starttime="20180322 17:18:32.330"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:18:33.698" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:18:33.698" starttime="20180322 17:18:33.673"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:18:33.762" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:18:33.762" level="INFO">${outputS} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:18:33.762" starttime="20180322 17:18:33.698"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:33.763" starttime="20180322 17:18:33.762"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:33.789" starttime="20180322 17:18:33.763"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:18:38.789" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:18:38.790" starttime="20180322 17:18:33.789"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_S}OC11_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:38.829" level="INFO">[root@clecvoip-02 calltesting]# /home/Origination/Scripts/OC11_uas.py 192.168.10 0.110 5061</msg>
+<status status="PASS" endtime="20180322 17:18:38.830" starttime="20180322 17:18:38.790"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:38.830" starttime="20180322 17:18:38.830"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:38.831" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:18:40.046" level="INFO">Read output: Last login: Thu Mar 22 17:18:20 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:18:40.046" starttime="20180322 17:18:38.830"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:18:40.054" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:18:40.054" starttime="20180322 17:18:40.046"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:18:40.089" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:18:40.089" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:18:40.089" starttime="20180322 17:18:40.054"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:40.089" starttime="20180322 17:18:40.089"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:40.101" starttime="20180322 17:18:40.090"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:18:45.101" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:18:45.102" starttime="20180322 17:18:40.101"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_C}OC11_uac.py ${SIG_IP} ${UAC_IP} ${COUNT}</arg>
+</arguments>
+<msg timestamp="20180322 17:18:45.133" level="INFO">[root@clecvoip-01 calltesting]# /etc/sipp/proxytesting/OC11_uac.py 192.168.126.7 1 192.168.100.107 1</msg>
+<status status="PASS" endtime="20180322 17:18:45.133" starttime="20180322 17:18:45.102"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>prompt=#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:45.134" starttime="20180322 17:18:45.134"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=10000</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:18:45.135" starttime="20180322 17:18:45.134"></status>
+</kw>
+<kw name="Read Until Prompt" library="SSHLibrary">
+<doc>Consumes and returns the server output until the prompt is found.</doc>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:19:19.468" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<msg timestamp="20180322 17:19:19.469" level="INFO">${output1} = Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:19:19.469" starttime="20180322 17:18:45.135"></status>
+</kw>
+<kw name="Should End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>]#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:19.471" starttime="20180322 17:19:19.470"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:19.471" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:19:19.472" starttime="20180322 17:19:19.471"></status>
+</kw>
+<kw name="Should Not Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` contains one or more of the ``*items``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>Fail</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:19.472" starttime="20180322 17:19:19.472"></status>
+</kw>
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180322 17:19:19.882" starttime="20180322 17:19:19.472"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${COUNT}+ ${COUNT}</arg>
+</arguments>
+<assign>
+<var>${SLEEPTIMER}</var>
+</assign>
+<msg timestamp="20180322 17:19:19.883" level="INFO">${SLEEPTIMER} = 2</msg>
+<status status="PASS" endtime="20180322 17:19:19.883" starttime="20180322 17:19:19.882"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SLEEPTIMER}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:21.886" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180322 17:19:21.887" starttime="20180322 17:19:19.883"></status>
+</kw>
+<tags>
+<tag>Origination/Inbound</tag>
+</tags>
+<status status="PASS" endtime="20180322 17:19:21.887" critical="yes" starttime="20180322 17:18:27.328"></status>
+</test>
+<test id="s1-t8" name="Test8: Origination call, BYE from customer">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:21.890" starttime="20180322 17:19:21.889"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:21.890" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:19:22.941" level="INFO">Read output: Last login: Thu Mar 22 17:19:09 2018 from 172.17.0.2</msg>
+<status status="PASS" endtime="20180322 17:19:22.942" starttime="20180322 17:19:21.890"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:19:22.965" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:19:22.966" starttime="20180322 17:19:22.942"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:19:23.230" level="INFO">[calltesting@clecvoip-02.lab1 ~]$ sudo su
+[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:19:23.231" level="INFO">${outputS} = [calltesting@clecvoip-02.lab1 ~]$ sudo su
+[sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:19:23.231" starttime="20180322 17:19:22.966"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:23.232" starttime="20180322 17:19:23.231"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:23.255" starttime="20180322 17:19:23.232"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:19:28.256" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:19:28.256" starttime="20180322 17:19:23.256"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_S}OC12_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:28.288" level="INFO">[root@clecvoip-02 calltesting]# /home/Origination/Scripts/OC12_uas.py 192.168.10 0.110 5061</msg>
+<status status="PASS" endtime="20180322 17:19:28.288" starttime="20180322 17:19:28.257"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:28.289" starttime="20180322 17:19:28.289"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:28.290" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:19:29.483" level="INFO">Read output: Last login: Thu Mar 22 17:18:50 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:19:29.483" starttime="20180322 17:19:28.289"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:19:29.520" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:19:29.520" starttime="20180322 17:19:29.483"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:19:29.521" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:19:29.521" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:19:29.521" starttime="20180322 17:19:29.520"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:29.521" starttime="20180322 17:19:29.521"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:29.537" starttime="20180322 17:19:29.521"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:19:34.538" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:19:34.538" starttime="20180322 17:19:29.538"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_C}OC12_uac.py ${SIG_IP} ${UAC_IP} ${COUNT}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:34.547" level="INFO">[root@clecvoip-01 calltesting]# /etc/sipp/proxytesting/OC12_uac.py 192.168.126.7 1 192.168.100.107 1</msg>
+<status status="PASS" endtime="20180322 17:19:34.547" starttime="20180322 17:19:34.539"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>prompt=#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:34.548" starttime="20180322 17:19:34.547"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=10000</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:34.548" starttime="20180322 17:19:34.548"></status>
+</kw>
+<kw name="Read Until Prompt" library="SSHLibrary">
+<doc>Consumes and returns the server output until the prompt is found.</doc>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:19:39.422" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<msg timestamp="20180322 17:19:39.424" level="INFO">${output1} = Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:19:39.424" starttime="20180322 17:19:34.548"></status>
+</kw>
+<kw name="Should End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>]#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:39.425" starttime="20180322 17:19:39.424"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:39.426" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:19:39.426" starttime="20180322 17:19:39.425"></status>
+</kw>
+<kw name="Should Not Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` contains one or more of the ``*items``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>Fail</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:39.426" starttime="20180322 17:19:39.426"></status>
+</kw>
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180322 17:19:39.545" starttime="20180322 17:19:39.426"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${COUNT}+ ${COUNT}</arg>
+</arguments>
+<assign>
+<var>${SLEEPTIMER}</var>
+</assign>
+<msg timestamp="20180322 17:19:39.546" level="INFO">${SLEEPTIMER} = 2</msg>
+<status status="PASS" endtime="20180322 17:19:39.546" starttime="20180322 17:19:39.545"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SLEEPTIMER}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:41.547" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180322 17:19:41.547" starttime="20180322 17:19:39.546"></status>
+</kw>
+<tags>
+<tag>Origination/Inbound</tag>
+</tags>
+<status status="PASS" endtime="20180322 17:19:41.548" critical="yes" starttime="20180322 17:19:21.888"></status>
+</test>
+<test id="s1-t9" name="Test9: Origination call, CANCEL after 18x">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:41.550" starttime="20180322 17:19:41.549"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:41.550" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:19:43.014" level="INFO">Read output: Last login: Thu Mar 22 17:19:22 2018 from 172.17.0.2
+[calltesting@clecvoip-02.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:19:43.015" starttime="20180322 17:19:41.550"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:19:43.074" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:19:43.074" starttime="20180322 17:19:43.015"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:19:43.121" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:19:43.121" level="INFO">${outputS} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:19:43.121" starttime="20180322 17:19:43.074"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:43.122" starttime="20180322 17:19:43.121"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:43.160" starttime="20180322 17:19:43.122"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:19:48.161" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:19:48.161" starttime="20180322 17:19:43.160"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_S}OC13_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:48.200" level="INFO">[root@clecvoip-02 calltesting]# /home/Origination/Scripts/OC13_uas.py 192.168.10 0.110 5061</msg>
+<status status="PASS" endtime="20180322 17:19:48.200" starttime="20180322 17:19:48.161"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:48.201" starttime="20180322 17:19:48.200"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:48.201" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:19:49.412" level="INFO">Read output: Last login: Thu Mar 22 17:19:28 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:19:49.412" starttime="20180322 17:19:48.201"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:19:49.418" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:19:49.418" starttime="20180322 17:19:49.413"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:19:49.441" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:19:49.441" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:19:49.441" starttime="20180322 17:19:49.418"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:49.441" starttime="20180322 17:19:49.441"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:49.459" starttime="20180322 17:19:49.441"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:19:54.459" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:19:54.460" starttime="20180322 17:19:49.459"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_C}OC13_uac.py ${SIG_IP} ${UAC_IP} ${COUNT}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:54.483" level="INFO">[root@clecvoip-01 calltesting]# /etc/sipp/proxytesting/OC13_uac.py 192.168.126.7 1 192.168.100.107 1</msg>
+<status status="PASS" endtime="20180322 17:19:54.483" starttime="20180322 17:19:54.460"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>prompt=#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:54.484" starttime="20180322 17:19:54.483"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=10000</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:54.484" starttime="20180322 17:19:54.484"></status>
+</kw>
+<kw name="Read Until Prompt" library="SSHLibrary">
+<doc>Consumes and returns the server output until the prompt is found.</doc>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:19:54.793" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<msg timestamp="20180322 17:19:54.793" level="INFO">${output1} = Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:19:54.793" starttime="20180322 17:19:54.484"></status>
+</kw>
+<kw name="Should End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>]#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:54.794" starttime="20180322 17:19:54.793"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:54.794" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:19:54.794" starttime="20180322 17:19:54.794"></status>
+</kw>
+<kw name="Should Not Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` contains one or more of the ``*items``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>Fail</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:54.794" starttime="20180322 17:19:54.794"></status>
+</kw>
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180322 17:19:55.068" starttime="20180322 17:19:54.795"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${COUNT}+ ${COUNT}</arg>
+</arguments>
+<assign>
+<var>${SLEEPTIMER}</var>
+</assign>
+<msg timestamp="20180322 17:19:55.069" level="INFO">${SLEEPTIMER} = 2</msg>
+<status status="PASS" endtime="20180322 17:19:55.069" starttime="20180322 17:19:55.068"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SLEEPTIMER}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:57.070" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180322 17:19:57.070" starttime="20180322 17:19:55.069"></status>
+</kw>
+<tags>
+<tag>Origination/Inbound</tag>
+</tags>
+<status status="PASS" endtime="20180322 17:19:57.070" critical="yes" starttime="20180322 17:19:41.549"></status>
+</test>
+<test id="s1-t10" name="Test10: Origination call, set CAC low and verify that 486 sent to carrier">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:57.073" starttime="20180322 17:19:57.072"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:19:57.074" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:19:58.442" level="INFO">Read output: Last login: Thu Mar 22 17:19:42 2018 from 172.17.0.2
+[calltesting@clecvoip-02.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:19:58.442" starttime="20180322 17:19:57.073"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:19:58.466" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:19:58.466" starttime="20180322 17:19:58.443"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:19:58.580" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:19:58.580" level="INFO">${outputS} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:19:58.580" starttime="20180322 17:19:58.466"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:58.581" starttime="20180322 17:19:58.580"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:19:58.635" starttime="20180322 17:19:58.581"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:20:03.636" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:20:03.636" starttime="20180322 17:19:58.635"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_S}OC15_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:20:03.682" level="INFO">[root@clecvoip-02 calltesting]# /home/Origination/Scripts/OC15_uas.py 192.168.10 0.110 5061</msg>
+<status status="PASS" endtime="20180322 17:20:03.683" starttime="20180322 17:20:03.636"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:03.683" starttime="20180322 17:20:03.683"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:20:03.684" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:20:04.892" level="INFO">Read output: Last login: Thu Mar 22 17:19:48 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:20:04.893" starttime="20180322 17:20:03.683"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:20:04.900" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:20:04.900" starttime="20180322 17:20:04.893"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:20:04.927" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:20:04.927" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:20:04.927" starttime="20180322 17:20:04.900"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:04.927" starttime="20180322 17:20:04.927"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:04.951" starttime="20180322 17:20:04.927"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:20:09.951" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:20:09.952" starttime="20180322 17:20:04.951"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_C}OC15_uac.py ${SIG_IP} ${UAC_IP} 3</arg>
+</arguments>
+<msg timestamp="20180322 17:20:09.957" level="INFO">[root@clecvoip-01 calltesting]# /etc/sipp/proxytesting/OC15_uac.py 192.168.126.7 1 192.168.100.107 3</msg>
+<status status="PASS" endtime="20180322 17:20:09.957" starttime="20180322 17:20:09.952"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>prompt=#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:09.958" starttime="20180322 17:20:09.957"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=10000</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:09.958" starttime="20180322 17:20:09.958"></status>
+</kw>
+<kw name="Read Until Prompt" library="SSHLibrary">
+<doc>Consumes and returns the server output until the prompt is found.</doc>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:20:44.416" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<msg timestamp="20180322 17:20:44.418" level="INFO">${output1} = Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:20:44.418" starttime="20180322 17:20:09.958"></status>
+</kw>
+<kw name="Should End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>]#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:44.419" starttime="20180322 17:20:44.419"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:20:44.420" level="INFO">Resolving remote host '192.168.126.71'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:20:44.420" starttime="20180322 17:20:44.420"></status>
+</kw>
+<kw name="Should Not Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` contains one or more of the ``*items``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>Fail</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:44.420" starttime="20180322 17:20:44.420"></status>
+</kw>
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180322 17:20:44.663" starttime="20180322 17:20:44.420"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${COUNT}+ ${COUNT}</arg>
+</arguments>
+<assign>
+<var>${SLEEPTIMER}</var>
+</assign>
+<msg timestamp="20180322 17:20:44.665" level="INFO">${SLEEPTIMER} = 2</msg>
+<status status="PASS" endtime="20180322 17:20:44.665" starttime="20180322 17:20:44.664"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SLEEPTIMER}</arg>
+</arguments>
+<msg timestamp="20180322 17:20:46.666" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180322 17:20:46.666" starttime="20180322 17:20:44.665"></status>
+</kw>
+<tags>
+<tag>Origination/Inbound</tag>
+</tags>
+<status status="PASS" endtime="20180322 17:20:46.667" critical="yes" starttime="20180322 17:19:57.072"></status>
+</test>
+<test id="s1-t11" name="Test11: Origination call, CASBC direct media enabled">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:46.670" starttime="20180322 17:20:46.669"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:20:46.670" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:20:48.040" level="INFO">Read output: Last login: Thu Mar 22 17:19:57 2018 from 172.17.0.2
+[calltesting@clecvoip-02.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:20:48.040" starttime="20180322 17:20:46.670"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:20:48.067" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:20:48.067" starttime="20180322 17:20:48.041"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:20:48.209" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:20:48.209" level="INFO">${outputS} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:20:48.209" starttime="20180322 17:20:48.067"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:48.210" starttime="20180322 17:20:48.209"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:48.272" starttime="20180322 17:20:48.210"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:20:53.273" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:20:53.273" starttime="20180322 17:20:48.272"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_S}OC16_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:20:53.336" level="INFO">[root@clecvoip-02 calltesting]# /home/Origination/Scripts/OC16_uas.py 192.168.10 0.110 5061</msg>
+<status status="PASS" endtime="20180322 17:20:53.336" starttime="20180322 17:20:53.274"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<msg timestamp="20180322 17:20:53.337" level="INFO">index=1
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=None
+host=192.168.100.110
+timeout=3 seconds
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20180322 17:20:53.337" starttime="20180322 17:20:53.336"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:53.337" starttime="20180322 17:20:53.337"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:20:53.338" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:20:54.553" level="INFO">Read output: Last login: Thu Mar 22 17:20:03 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:20:54.554" starttime="20180322 17:20:53.337"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:20:54.562" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:20:54.562" starttime="20180322 17:20:54.554"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:20:54.640" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:20:54.640" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:20:54.640" starttime="20180322 17:20:54.562"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:54.640" starttime="20180322 17:20:54.640"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:54.655" starttime="20180322 17:20:54.640"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:20:59.656" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:20:59.657" starttime="20180322 17:20:54.655"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_C}OC16_uac.py ${DM_SIG_IP} ${UAC_IP} ${COUNT}</arg>
+</arguments>
+<msg timestamp="20180322 17:20:59.671" level="INFO">[root@clecvoip-01 calltesting]# /etc/sipp/proxytesting/OC16_uac.py 192.168.126.7 2 192.168.100.107 1</msg>
+<status status="PASS" endtime="20180322 17:20:59.671" starttime="20180322 17:20:59.658"></status>
+</kw>
+<kw name="Get Connection" library="SSHLibrary">
+<doc>Return information about the connection.</doc>
+<msg timestamp="20180322 17:20:59.672" level="INFO">index=2
+path_separator=/
+prompt=None
+width=80
+newline=
+
+height=24
+encoding=UTF-8
+alias=None
+host=192.168.100.107
+timeout=3 seconds
+term_type=vt100
+port=22</msg>
+<status status="PASS" endtime="20180322 17:20:59.672" starttime="20180322 17:20:59.671"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=100</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:20:59.672" starttime="20180322 17:20:59.672"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>a=sendrecv</arg>
+</arguments>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:21:10.026" level="INFO">Resolving remote host '192.168.126.72'... Done.
+2018-03-22	17:21:10.002958	1521739270.002958: Aborting call on unexpected message for Call-Id '1-9234@192.168.100.107': while expecting '183' (index 3), received 'SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.100.107:5095;branch=z9hG4bK-9234-1-0
+From: sipp &lt;sip:9193377202@192.168.100.107:5095&gt;;isup-oli=62;tag=1
+To: sut &lt;sip:+14027658834@192.168.126.72:5060&gt;;tag=gK0480ba52
+Call-ID: 1-9234@192.168.100.107
+CSeq: 1 INVITE
+Accept: application/sdp
+Contact: &lt;sip:+14027658834@192.168.126.72:5060&gt;
+Allow: INVITE,ACK,CANCEL,BYE,PRACK,OPTIONS
+Content-Length:   242
+Content-Disposition: session; handling=required
+Content-Type: application/sdp
+
+v=0
+o=Sonus_UAC 375305 55090 IN IP4 192.168.126.72
+s=SIP Media Capabilities
+c=IN IP4 192.168.100.108
+t=0 0
+m=audio 39078 RTP/AVP 0 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv</msg>
+<msg timestamp="20180322 17:21:10.027" level="INFO">${output1} = Resolving remote host '192.168.126.72'... Done.
+2018-03-22	17:21:10.002958	1521739270.002958: Aborting call on unexpected message for Call-Id '1-9234@192.168.100.107': while expecting '183' (index 3),...</msg>
+<status status="PASS" endtime="20180322 17:21:10.027" starttime="20180322 17:20:59.672"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:21:10.028" level="INFO">Resolving remote host '192.168.126.72'... Done.
+2018-03-22	17:21:10.002958	1521739270.002958: Aborting call on unexpected message for Call-Id '1-9234@192.168.100.107': while expecting '183' (index 3), received 'SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.100.107:5095;branch=z9hG4bK-9234-1-0
+From: sipp &lt;sip:9193377202@192.168.100.107:5095&gt;;isup-oli=62;tag=1
+To: sut &lt;sip:+14027658834@192.168.126.72:5060&gt;;tag=gK0480ba52
+Call-ID: 1-9234@192.168.100.107
+CSeq: 1 INVITE
+Accept: application/sdp
+Contact: &lt;sip:+14027658834@192.168.126.72:5060&gt;
+Allow: INVITE,ACK,CANCEL,BYE,PRACK,OPTIONS
+Content-Length:   242
+Content-Disposition: session; handling=required
+Content-Type: application/sdp
+
+v=0
+o=Sonus_UAC 375305 55090 IN IP4 192.168.126.72
+s=SIP Media Capabilities
+c=IN IP4 192.168.100.108
+t=0 0
+m=audio 39078 RTP/AVP 0 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=sendrecv</msg>
+<status status="PASS" endtime="20180322 17:21:10.028" starttime="20180322 17:21:10.028"></status>
+</kw>
+<kw name="Should Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` does not contain any of the ``*items``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>IN IP4 192.168.100.108</arg>
+<arg>IN IP4 192.168.100.104</arg>
+<arg>IN</arg>
+<arg>IP4 192.168.126.72</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:21:10.029" starttime="20180322 17:21:10.028"></status>
+</kw>
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180322 17:21:10.272" starttime="20180322 17:21:10.029"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>25s</arg>
+</arguments>
+<msg timestamp="20180322 17:21:35.273" level="INFO">Slept 25 seconds</msg>
+<status status="PASS" endtime="20180322 17:21:35.273" starttime="20180322 17:21:10.272"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAS_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:21:35.274" starttime="20180322 17:21:35.274"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:21:35.275" level="INFO">Logging into '192.168.100.110:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:21:36.636" level="INFO">Read output: Last login: Thu Mar 22 17:20:47 2018 from 172.17.0.2
+[calltesting@clecvoip-02.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:21:36.637" starttime="20180322 17:21:35.274"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:21:36.671" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:21:36.671" starttime="20180322 17:21:36.637"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputS}</var>
+</assign>
+<msg timestamp="20180322 17:21:36.826" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:21:36.826" level="INFO">${outputS} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:21:36.826" starttime="20180322 17:21:36.671"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputS}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:21:36.827" starttime="20180322 17:21:36.826"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:21:36.856" starttime="20180322 17:21:36.827"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:21:41.858" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:21:41.859" starttime="20180322 17:21:36.857"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_S}OC16Call_uas.py ${UAS_IP} ${PORT}</arg>
+</arguments>
+<msg timestamp="20180322 17:21:41.909" level="INFO">[root@clecvoip-02 calltesting]# /home/Origination/Scripts/OC16Call_uas.py 192.16 8.100.110 5061</msg>
+<status status="PASS" endtime="20180322 17:21:41.910" starttime="20180322 17:21:41.860"></status>
+</kw>
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${UAC_IP}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:21:41.910" starttime="20180322 17:21:41.910"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180322 17:21:41.911" level="INFO">Logging into '192.168.100.107:22' as 'calltesting'.</msg>
+<msg timestamp="20180322 17:21:43.085" level="INFO">Read output: Last login: Thu Mar 22 17:20:53 2018 from 192.168.100.110
+[calltesting@clecvoip-01.lab1 ~]$</msg>
+<status status="PASS" endtime="20180322 17:21:43.085" starttime="20180322 17:21:41.911"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>sudo su</arg>
+</arguments>
+<msg timestamp="20180322 17:21:43.120" level="INFO">sudo su</msg>
+<status status="PASS" endtime="20180322 17:21:43.121" starttime="20180322 17:21:43.086"></status>
+</kw>
+<kw name="Read Until" library="SSHLibrary">
+<doc>Consumes and returns the server output until `expected` is encountered.</doc>
+<arguments>
+<arg>:</arg>
+</arguments>
+<assign>
+<var>${outputC}</var>
+</assign>
+<msg timestamp="20180322 17:21:43.167" level="INFO">[sudo] password for calltesting:</msg>
+<msg timestamp="20180322 17:21:43.167" level="INFO">${outputC} = [sudo] password for calltesting:</msg>
+<status status="PASS" endtime="20180322 17:21:43.167" starttime="20180322 17:21:43.121"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${outputC}</arg>
+<arg>[sudo] password for calltesting:</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:21:43.167" starttime="20180322 17:21:43.167"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:21:43.185" starttime="20180322 17:21:43.167"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180322 17:21:48.186" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180322 17:21:48.187" starttime="20180322 17:21:43.186"></status>
+</kw>
+<kw name="Write" library="SSHLibrary">
+<doc>Writes the given `text` on the remote machine and appends a newline.</doc>
+<arguments>
+<arg>${PATH_C}OC16Call_uac.py ${DM_SIG_IP} ${UAC_IP} 1</arg>
+</arguments>
+<msg timestamp="20180322 17:21:48.226" level="INFO">[root@clecvoip-01 calltesting]# /etc/sipp/proxytesting/OC16Call_uac.py 192.168.1 26.72 192.168.100.107 1</msg>
+<status status="PASS" endtime="20180322 17:21:48.226" starttime="20180322 17:21:48.187"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>prompt=#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:21:48.227" starttime="20180322 17:21:48.226"></status>
+</kw>
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>timeout=10000</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:21:48.227" starttime="20180322 17:21:48.227"></status>
+</kw>
+<kw name="Read Until Prompt" library="SSHLibrary">
+<doc>Consumes and returns the server output until the prompt is found.</doc>
+<assign>
+<var>${output1}</var>
+</assign>
+<msg timestamp="20180322 17:22:22.573" level="INFO">Resolving remote host '192.168.126.72'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<msg timestamp="20180322 17:22:22.574" level="INFO">${output1} = Resolving remote host '192.168.126.72'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:22:22.574" starttime="20180322 17:21:48.227"></status>
+</kw>
+<kw name="Should End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>]#</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:22:22.576" starttime="20180322 17:22:22.575"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output1}</arg>
+</arguments>
+<msg timestamp="20180322 17:22:22.576" level="INFO">Resolving remote host '192.168.126.72'... Done.
+*****Pass*****
+[root@clecvoip-01 calltesting]#</msg>
+<status status="PASS" endtime="20180322 17:22:22.576" starttime="20180322 17:22:22.576"></status>
+</kw>
+<kw name="Should Not Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` contains one or more of the ``*items``.</doc>
+<arguments>
+<arg>${output1}</arg>
+<arg>Fail</arg>
+</arguments>
+<status status="PASS" endtime="20180322 17:22:22.577" starttime="20180322 17:22:22.577"></status>
+</kw>
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20180322 17:22:22.701" starttime="20180322 17:22:22.577"></status>
+</kw>
+<tags>
+<tag>Origination/Inbound</tag>
+</tags>
+<status status="PASS" endtime="20180322 17:22:22.702" critical="yes" starttime="20180322 17:20:46.668"></status>
+</test>
+<doc>Voice Automation Tool</doc>
+<status status="FAIL" endtime="20180322 17:22:22.704" starttime="20180322 17:14:28.768"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="10">Critical Tests</stat>
+<stat fail="1" pass="10">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="10">Origination/Inbound</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Origination" pass="10">Origination</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
