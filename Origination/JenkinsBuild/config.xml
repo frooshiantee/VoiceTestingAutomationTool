@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>1</daysToKeep>
+        <numToKeep>5</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>/usr/local/bin/pybot --output /home/Origination/output.xml --report /home/Origination/report.html --log /home/Origination/log.html /home/Origination/Origination.robot</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.robot.RobotPublisher plugin="robot@1.6.4">
+      <outputPath>/home/Origination</outputPath>
+      <reportFileName></reportFileName>
+      <logFileName></logFileName>
+      <outputFileName></outputFileName>
+      <disableArchiveOutput>false</disableArchiveOutput>
+      <passThreshold>100.0</passThreshold>
+      <unstableThreshold>0.0</unstableThreshold>
+      <otherFiles>
+        <string></string>
+      </otherFiles>
+      <enableCache>true</enableCache>
+      <onlyCritical>true</onlyCritical>
+    </hudson.plugins.robot.RobotPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>
