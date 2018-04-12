@@ -12,6 +12,7 @@
 * Wireshark(*optional*)
 * Apache HTTP Server(*optional*)
 
+*** [Ensure to add Robot Framework plugin onto Jenkins](https://wiki.jenkins.io/display/JENKINS/Robot+Framework+Plugin) ***
 
 
 
