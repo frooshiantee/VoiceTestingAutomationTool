@@ -22,5 +22,6 @@
 
 * **How To Add New Termination Test Cases for Voice Automation Tool:** It is a step by step guide for adding new Term Test Cases on the tool
 
+* **VoiceTestingAutomationTool_Flow_07142017:** It is a comprehensive Infrastructre layout for which the tool is built
 
 
