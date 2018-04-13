@@ -1,0 +1,12 @@
+sipp: The following events occured:
+2016-07-06	19:25:25.225663	1467833125.225663: Aborting call on unexpected message for Call-Id '134489606_128969779@192.168.100.89': while expecting '200' (index 13), received 'SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.100.107:5080;branch=z9hG4bK-2750-1-12
+From: <sip:+19194393509@192.168.100.62>;tag=1
+To: <sip:+19198096325@192.168.100.89>;tag=gK043d4749
+Call-ID: 134489606_128969779@192.168.100.89
+CSeq: 217747 BYE
+Record-Route: <sip:192.168.100.62:5060;lr=on;ftag=1>
+Record-Route: <sip:192.168.100.101:5060;lr;ftag=1>
+Content-Length: 0
+
+'.
