@@ -353,43 +353,43 @@ Test8: Termination call, call to invalid TN (555-555-5555)
 
 
 
-Test9: Termination call,911
-    Open Connection    ${UAS_IP}
-    Login    ${USERNAME}    ${PASSWORD}
+# Test9: Termination call,911
+  #  Open Connection    ${UAS_IP}
+   # Login    ${USERNAME}    ${PASSWORD}
 
-    write		sudo su
-    ${outputS}=	Read Until	:
-    Should Contain	${outputS}	[sudo] password for calltesting:
-    write	${PASSWORD}
-    sleep  10s
-    write  cd ${PATH_S}
-    write  ${PATH_S}TC15_uas.py ${UAS_IP} ${PORT}
+   # write		sudo su
+   # ${outputS}=	Read Until	:
+   # Should Contain	${outputS}	[sudo] password for calltesting:
+   # write	${PASSWORD}
+   # sleep  10s
+   # write  cd ${PATH_S}
+   # write  ${PATH_S}TC15_uas.py ${UAS_IP} ${PORT}
 
-    [Documentation]  Running UAC that accepts SBC IP(216.x.x.x) and Client IP(192.168.x.x)
-    [Tags]     Terminating/Outbound
+   # [Documentation]  Running UAC that accepts SBC IP(216.x.x.x) and Client IP(192.168.x.x)
+   # [Tags]     Terminating/Outbound
 
-    Open Connection    ${UAC_IP}
-    Login    ${USERNAME}    ${PASSWORD}
+   # Open Connection    ${UAC_IP}
+   # Login    ${USERNAME}    ${PASSWORD}
 
-    write		sudo su
-    ${outputC}=	Read Until	:
-    Should Contain	${outputC}	[sudo] password for calltesting:
-    write	${PASSWORD}
-    sleep   2s
-    write   cd ${PATH_C}
-    write   ${PATH_C}TC15_uac.py ${SBC_IP} ${UAC_IP} ${COUNT}
+   # write		sudo su
+   # ${outputC}=	Read Until	:
+   # Should Contain	${outputC}	[sudo] password for calltesting:
+   # write	${PASSWORD}
+   # sleep   2s
+   # write   cd ${PATH_C}
+   # write   ${PATH_C}TC15_uac.py ${SBC_IP} ${UAC_IP} ${COUNT}
 
-    Set Client Configuration    prompt=#
-    Set Client Configuration    timeout=10000
-    ${output1}=    Read Until Prompt
-    Should End With     ${output1}    ]#
-    Log     ${output1}
-    Should Not Contain Any      ${output1}   Fail
+   # Set Client Configuration    prompt=#
+   # Set Client Configuration    timeout=10000
+   # ${output1}=    Read Until Prompt
+   # Should End With     ${output1}    ]#
+   # Log     ${output1}
+   # Should Not Contain Any      ${output1}   Fail
 
-    close all connections
+   # close all connections
 
-    ${SLEEPTIMER}=   Evaluate    ${COUNT}+ ${COUNT}
-    sleep  ${SLEEPTIMER}
+   # ${SLEEPTIMER}=   Evaluate    ${COUNT}+ ${COUNT}
+   # sleep  ${SLEEPTIMER}
 
 
 Test10: Termination call, CASBC direct media enabled
