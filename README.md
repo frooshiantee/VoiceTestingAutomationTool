@@ -29,3 +29,10 @@
 
 
 
+### Dashboard snapshot
+
+![image](https://user-images.githubusercontent.com/36050047/39837584-ea2e3f34-53a4-11e8-864e-088a1a287607.png)
+
+
+
+
