@@ -16,13 +16,13 @@
 
 
 ## Documentation/Guide
-* **Guide to access Jenkins:** It is a step by step guide to access the Voice Testing Automation Tool
+* **[Guide to access Jenkins:](https://github.com/cfernando3/VoiceTestingAutomationTool/blob/master/Guide%20to%20Access%20Jenkins.pdf)** It is a step by step guide to access the Voice Testing Automation Tool
 
-* **How To Add New Origination Test Cases for Voice Automation Tool:** It is a step by step guide for adding new Orig Test Cases on the tool
+* **[How To Add New Origination Test Cases for Voice Automation Tool:](https://github.com/cfernando3/VoiceTestingAutomationTool/blob/master/How%20To%20Add%20New%20Origination%20Test%20Cases%20for%20Voice%20Automation%20Tool.pdf)** It is a step by step guide for adding new Orig Test Cases on the tool
 
-* **How To Add New Termination Test Cases for Voice Automation Tool:** It is a step by step guide for adding new Term Test Cases on the tool
+* **[How To Add New Termination Test Cases for Voice Automation Tool:](https://github.com/cfernando3/VoiceTestingAutomationTool/blob/master/How%20To%20Add%20New%20Termination%20Test%20Cases%20for%20Voice%20Automation%20Tool.pdf)** It is a step by step guide for adding new Term Test Cases on the tool
 
-* **VoiceTestingAutomationTool_Flow_07142017:** It is a comprehensive Infrastructure layout for which the tool is built
+* **[VoiceTestingAutomationTool_Flow_07142017:](https://github.com/cfernando3/VoiceTestingAutomationTool/blob/master/VoiceTestingAutomationTool_Flow_07142017.pdf)** It is a comprehensive Infrastructure layout for which the tool is built
 
 * Read ([Troubleshooting Guide](https://github.com/cfernando3/VoiceTestingAutomationTool/blob/master/Troubleshooting%20Guide%20.pdf)) --> ***Troubleshooting steps whenever the lab clecvoip-02.lab1(192.168.100.110) VM is restarted or rebooted/the application/containers in stop status***
 
